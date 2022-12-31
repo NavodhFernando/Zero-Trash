@@ -1,0 +1,300 @@
+/* Font Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+/* 
+ * Minimal CSS Reset
+ * @link https://www.digitalocean.com/community/tutorials/css-minimal-css-reset
+ */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---- Layout Styles ---- */
+
+header {
+  margin-top: 25px;
+}
+
+header div {
+  display: flex;
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  margin-right: 50px;
+  max-width: 15%;
+}
+
+nav .list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .list a {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #156E2E;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+nav .cta {
+  display: flex;
+}
+
+nav .cta .login a {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #156E2E;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+nav .cta .signup a {
+  background: #156E2E;
+  border-radius: 20px;
+  padding: 6px 32px;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+section.hero {
+  margin-top: 160px;
+}
+
+section.hero h1 {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 55px;
+  letter-spacing: 1px;
+  color: #8cc63e;
+  max-width: 200px;
+  margin-bottom: 30px;
+}
+
+section.hero p {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  line-height: 24px;
+  max-width: 440px;
+  color: rgba(0, 0, 0, 0.45);
+  font-weight: 500;
+  font-size: 17px;
+}
+
+section.hero p:first-of-type {
+  margin-bottom: 16px;
+}
+
+section.hero p:last-of-type {
+  margin-bottom: 48px;
+}
+
+section.hero a {
+  background: #156E2E;
+  border-radius: 30px;
+  padding: 8px 34px;
+  text-decoration: none;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+
+section.hero a img {
+  position: relative;
+  top: -2px;
+  left: 6px;
+}
+
+section.hero .bg .overlay {
+  position: absolute;
+  top: 150px;
+  right: 0;
+  width: 950px;
+}
+
+section.hero .bg .path {
+  position: absolute;
+  right: 0;
+  top: -100px;
+  width: 1250px;
+  height: 900px;
+  z-index: -10;
+}
+
+section.stats {
+  margin-top: 280px;
+  margin-bottom: 100px;
+}
+
+section.process {
+  margin-top: 90px;
+  background: #f9fcf5;
+  padding: 50px 0 60px;
+}
+
+section.process h2 {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 55px;
+  letter-spacing: 1px;
+  color: #8cc63e;
+  text-align: center;
+}
+
+section.process img {
+  margin-top: 50px;
+}
+
+section.partners {
+  margin-top: 65px;
+}
+
+section.partners img {
+  width: 100%;
+}
+
+footer {
+  padding: 40px 0;
+  background: #f9fcf5;
+}
+
+footer img {
+  max-width: 15%;
+}
+
+.foot-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+footer main .contacts {
+  max-width: 500px;
+}
+
+footer main .contacts a {
+  display: block;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #156E2E;
+  text-decoration: none;
+}
+
+footer main .contacts a span {
+  text-decoration: underline;
+}
+
+footer nav {
+  list-style: none;
+  display: flex;
+}
+
+footer small {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer small a {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #156E2E;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+footer .socials {
+  list-style: none;
+  display: flex;
+}
+
+footer .socials li:not(:last-of-type) {
+  margin-right: 35px;
+}
+
+footer .socials a {
+  margin: 0;
+}
+
+footer main .address {
+  max-width: 250px;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: right;
+  color: #156E2E;
+}
